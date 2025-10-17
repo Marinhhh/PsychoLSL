@@ -96,7 +96,7 @@ Navigation/
 │
 ├── Logs/                             # 运行日志
 │
-└── docs/                             # 文档
+└── Docs/                             # 文档
     ├── 技术文档-主文档.md（本文档）
     ├── 技术文档-第1-6章.md
     ├── framework.md                 # 框架文档

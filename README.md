@@ -91,18 +91,18 @@ python Scripts\Tools\lsl_recorder.py --gui
 
 ### 技术文档（6章详细手册）
 
-**入口：[技术文档-主文档.md](docs/Main.md)**
+**入口：[技术文档-主文档.md](Docs/Main.md)**
 
-- **[第1章 项目架构](docs/01Chapter_ProjectFrame.md)** - 模块详解、依赖关系
-- **[第2章 NatNet系统](docs/02Chapter_NatnetSdk.md)**  - 数据采集技术
-- **[第3章 LSL系统](docs/03Chapter_LabStreamingLayor.md)**  - 数据流技术
-- **[第4章 配置参数](docs/04Chapter_Config.md)** - 参数手册
-- **[第5章 数据格式](docs/05Chapter_DataFormat.md)** - 格式规范
-- **[第6章 故障诊断](docs/06Chapter_Problem.md)** - 问题解决
+- **[第1章 项目架构](Docs/01Chapter_ProjectFrame.md)** - 模块详解、依赖关系
+- **[第2章 NatNet系统](Docs/02Chapter_NatnetSdk.md)**  - 数据采集技术
+- **[第3章 LSL系统](Docs/03Chapter_LabStreamingLayor.md)**  - 数据流技术
+- **[第4章 配置参数](Docs/04Chapter_Config.md)** - 参数手册
+- **[第5章 数据格式](Docs/05Chapter_DataFormat.md)** - 格式规范
+- **[第6章 故障诊断](Docs/06Chapter_Problem.md)** - 问题解决
 
 ### 其他文档
 
-- **[实验设计报告](docs/Design.md)**
+- **[实验设计报告](Docs/Design.md)**
 
 
 ---
@@ -111,10 +111,10 @@ python Scripts\Tools\lsl_recorder.py --gui
 
 | 问题 | 快速解决 | 详细说明 |
 |------|---------|---------|
-| **光点不移动** | Sub001改为Markerset | [第6章 6.1](docs/06Chapter_Problem.md) |
-| **调整缩放** | 修改`experiment_config.json`第6行 | [第4章 4.1](docs/04Chapter_Config.md) |
-| **LSL无数据** | 先启动录制器，再启动实验 | [第6章 6.2](docs/06Chapter_Problem.md) |
-| **NatNet连接失败** | 检查IP和Motive录制状态 | [第2章 2.8](docs/02Chapter_NatnetSdk.md) |
+| **光点不移动** | Sub001改为Markerset | [第6章 6.1](Docs/06Chapter_Problem.md) |
+| **调整缩放** | 修改`experiment_config.json`第6行 | [第4章 4.1](Docs/04Chapter_Config.md) |
+| **LSL无数据** | 先启动录制器，再启动实验 | [第6章 6.2](Docs/06Chapter_Problem.md) |
+| **NatNet连接失败** | 检查IP和Motive录制状态 | [第2章 2.8](Docs/02Chapter_NatnetSdk.md) |
 
 ---
 
@@ -217,9 +217,9 @@ python Scripts\Tools\test_lsl_connection.py
 
 ### 文档
 
-- **快速问题**：[第6章 故障诊断](docs/06Chapter_Problem.md)
-- **技术细节**：[第2章 NatNet](docs/02Chapter_NatnetSdk.md) + [第3章 LSL](docs/03Chapter_LabStreamingLayor.md)
-- **参数调整**：[第4章 配置参数](docs/04Chapter_Config.md)
+- **快速问题**：[第6章 故障诊断](Docs/06Chapter_Problem.md)
+- **技术细节**：[第2章 NatNet](Docs/02Chapter_NatnetSdk.md) + [第3章 LSL](Docs/03Chapter_LabStreamingLayor.md)
+- **参数调整**：[第4章 配置参数](Docs/04Chapter_Config.md)
 
 ### 诊断工具
 运行相应工具获取详细诊断信息，查阅文档解决。
