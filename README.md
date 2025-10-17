@@ -237,8 +237,8 @@ python Scripts\Tools\test_lsl_connection.py
 
 ---
 
-**维护者**: Research Team  
+**维护者**: Marin  
 **最后更新**: 2025-10-17  
 **技术支持**: 查阅完整技术文档
-
+**作者邮箱**: marin1120@163.com
 
