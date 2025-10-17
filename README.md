@@ -1,4 +1,4 @@
-# 空间导航与神经同步实验系统
+# 空间导航与神经同步实验系统 V3.3.1
 
 **基于OptiTrack和LSL的多模态实验平台**
 
@@ -10,7 +10,19 @@
 
 ## 🎯 系统简介
 
-本系统用于研究二人协作空间导航任务中的行为和神经同步现象，集成了OptiTrack动作捕捉和LSL数据流技术。
+本系统用于研究双人协作空间导航任务中的行为和神经同步现象，集成了OptiTrack动作捕捉和LSL数据流技术。
+### 技术方法
+1.用NatNetSDK接收从Optitrack(Motive)流出的帧数据包
+
+2.基于NatNet中的Motive帧数据，在Psychopy中搭建交互式的实验场景
+
+3.将NatNet接收到的Motive帧数据广播为LSL格式的数据流
+
+4.使用python的pylsl库，接收LSL格式的Motive帧数据
+
+5.通过LSL对齐Optitrack和Psychopy的时间戳，使用LSL的内部时钟`pylsl.local_clock()`
+
+6.后续可以将其他的设备接入LSL，使用LSL的内部时钟对齐多模态数据的时间戳。
 
 ### 核心功能
 
@@ -72,20 +84,19 @@ python Scripts\Tools\lsl_recorder.py --gui
 
 ### 技术文档（6章详细手册）
 
-**入口**：[技术文档-主文档.md](docs/Main.md)
+**入口：[技术文档-主文档.md](docs/Main.md)**
 
-1. **[第1章 项目架构](docs/01Chapter_ProjectFrame.md)** - 模块详解、依赖关系
-2. **[第2章 NatNet系统](docs/02Chapter_NatnetSdk.md)** ⭐ - 数据采集技术
-3. **[第3章 LSL系统](docs/03Chapter_LabStreamingLayor.md)** ⭐ - 数据流技术
-4. **[第4章 配置参数](docs/04Chapter_Config.md)** - 参数手册
-5. **[第5章 数据格式](docs/05Chapter_DataFormat.md)** - 格式规范
-6. **[第6章 故障诊断](docs/06Chapter_Problem.md)** - 问题解决
+- **[第1章 项目架构](docs/01Chapter_ProjectFrame.md)** - 模块详解、依赖关系
+- **[第2章 NatNet系统](docs/02Chapter_NatnetSdk.md)**  - 数据采集技术
+- **[第3章 LSL系统](docs/03Chapter_LabStreamingLayor.md)**  - 数据流技术
+- **[第4章 配置参数](docs/04Chapter_Config.md)** - 参数手册
+- **[第5章 数据格式](docs/05Chapter_DataFormat.md)** - 格式规范
+- **[第6章 故障诊断](docs/06Chapter_Problem.md)** - 问题解决
 
 ### 其他文档
 
-- **框架文档**：[framework.md](docs/framework.md)
-- **研究设计**：[research_design.md](docs/research_design.md)
-- **版本更新**：[docs/Change/](docs/Change/)
+- **[实验设计报告](docs/Design.md)**
+
 
 ---
 
@@ -204,14 +215,7 @@ python Scripts\Tools\test_lsl_connection.py
 - **参数调整**：[第4章 配置参数](docs/04Chapter_Config.md)
 
 ### 诊断工具
-
 运行相应工具获取详细诊断信息，查阅文档解决。
-
----
-
-## 📄 许可证
-
-MIT License
 
 ---
 

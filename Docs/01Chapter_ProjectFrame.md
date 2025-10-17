@@ -16,7 +16,7 @@
 | 技术组件 | 版本 | 作用 |
 |---------|------|------|
 | **Python** | 3.8+ | 主编程语言 |
-| **NatNet SDK** | 4.x | OptiTrack数据接收 |
+| **NatNet SDK** | 3.x | OptiTrack数据接收 |
 | **pylsl** | 1.17.6 | LSL数据流处理 |
 | **PsychoPy** | 2024.x | 实时可视化 |
 | **PyQt5** | 5.x | GUI界面 |

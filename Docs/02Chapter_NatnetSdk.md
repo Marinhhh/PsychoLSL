@@ -258,15 +258,22 @@ self.server_ip = "192.168.3.58"  # Motive IP
 self.client_ip = "192.168.3.55"  # 本机IP
 self.use_multicast = True
 ```
+如果是在同一台电脑上运行Motive和Python程序，需要在Motive中将`DataStreaming`设置为`loopback`，并选择单播`Unicast`。
+在Python配置文件中设置
+```python
+use_multicast: false
+server_ip: "127.0.0.1"
+client_ip: "127.0.0.1"
+```
 
 ### 网络模式
 
 #### 单播模式（use_multicast=false）
 
 ```
-Motive (192.168.3.58)
+Motive (127.0.0.1)
     ↓ 单播UDP
-Python (192.168.3.55)
+Python (127.0.0.1)
 ```
 
 **适用**：
@@ -302,7 +309,7 @@ client.set_print_level(0)                    # 关闭verbose输出
 # 设置回调
 client.new_frame_with_data_listener = self._on_new_frame
 
-# 启动（'d'=数据流模式）
+# 启动（'d'=数据流模式 / 'c'=命令模式, 默认选'd'）
 client.run('d')
 ```
 
@@ -604,7 +611,7 @@ python Scripts\Tools\diagnose_natnet_data.py
 
 查看输出的数据类型和对象名称。
 
-### 问题3：光点位置不更新
+### 问题3：Psychopy位置不更新
 
 **症状**：
 ```

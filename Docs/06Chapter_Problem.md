@@ -14,6 +14,7 @@
 **症状**：运行Motive时，软件立即关闭
 
 **解决方案**：定位到目录`C:\Program Data\OptiTrack\Motive\`，找到并删除`MotiveProfile`文件，如图所示：
+
 ![alt text](Picture/crash.png)
 
 
@@ -22,7 +23,8 @@
 
 **解决方案**：
 1. 检查电脑性能，确保CPU和内存使用率不高
-2. 降低Motive彩色相机的功率占比，如图所示
+2. 降低Motive彩色相机的功率占比，如图所示：
+
 ![alt text](Picture/frozen.png)
 
 ## 6.2 NatNet连接问题
@@ -696,9 +698,9 @@ python Scripts\Tools\test_lsl_connection.py
 
 ### 开始使用系统
 
-**→ 返回 [主文档](技术文档-主文档.md)**
+**→ 返回 [主文档](Main.md)**
 
-**→ 查看 [快速开始指南](V3.3.1版本更新说明.md)**
+**→ 查看 [快速开始指南](README.md)**
 
 ---
 

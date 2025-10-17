@@ -425,7 +425,7 @@ check_data_integrity(dyad_id=1, session_id=2)
 
 ## 下一章
 
-**→ [第6章 故障诊断手册](技术文档-第6章-故障诊断.md)**
+**→ [第6章 故障诊断手册](06Chapter_Problem.md)**
 
 学习如何诊断和解决各种问题。
 
