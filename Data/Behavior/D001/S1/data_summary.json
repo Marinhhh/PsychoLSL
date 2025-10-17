@@ -1,0 +1,14 @@
+{
+  "session_info": {
+    "dyad_id": 1,
+    "session_id": 1,
+    "sub_a_id": "001",
+    "sub_b_id": "002",
+    "block": 1
+  },
+  "output_dir": "d:\\桌面\\MotivePsychopyLSL\\Data\\Behavior\\D001\\S1",
+  "total_frames": 70,
+  "buffer_size": 0,
+  "lsl_clock_offset": 1760715064.911556,
+  "timestamp": "2025-10-17 23:31:16"
+}

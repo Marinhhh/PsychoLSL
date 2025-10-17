@@ -1,0 +1,8 @@
+2025-10-17 23:30:37,983 - AudioManager - INFO - 音频基础路径: d:\桌面\MotivePsychopyLSL\Scripts\Core\..\..\Assets\Audios
+2025-10-17 23:30:45,228 - DataLogger - INFO - LSL时钟基准已设置: 1760715045.2282357
+2025-10-17 23:30:50,630 - LSLManager - INFO - LSL Marker发送: 1
+2025-10-17 23:30:53,512 - MapLearningSystem - ERROR - 资源清理错误: mixer not initialized
+2025-10-17 23:30:57,362 - AudioManager - INFO - 音频基础路径: d:\桌面\MotivePsychopyLSL\Scripts\Core\..\..\Assets\Audios
+2025-10-17 23:31:04,911 - DataLogger - INFO - LSL时钟基准已设置: 1760715064.911556
+2025-10-17 23:31:14,268 - LSLManager - INFO - LSL Marker发送: 1
+2025-10-17 23:31:16,369 - NavigationSystem - ERROR - 资源清理错误: mixer not initialized

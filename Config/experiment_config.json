@@ -1,0 +1,116 @@
+{
+  "version": "3.0",
+  "description": "空间导航与神经同步实验配置 V3.0 - 固定线性映射版",
+  
+  "transform_params": {
+    "scale_factor": 216.0,
+    "z_flip": -1,
+    "world_range": 6.0,
+    "screen_range": 1080,
+    "comment": "固定线性映射参数，无需校准"
+  },
+  
+  "scene_config": {
+    "room_size": [6.0, 6.0],
+    "window_size": [1920, 1080],
+    "scene_size": [1080, 1080],
+    "num_hidden_targets": 3,
+    "target_radius": 0.4,
+    "wallmarker_threshold": 1.0,
+    "min_target_distance": 2.0
+  },
+  
+  "experiment_flow": {
+    "phase_0": {
+      "name": "认知地图建立",
+      "description": "单人学习空间布局和隐藏目标位置",
+      "default_trials": 20,
+      "timeout_wall": 30.0,
+      "timeout_target": 45.0
+    },
+    "phase_1": {
+      "name": "神经同步测量",
+      "description": "双人协作导航任务",
+      "default_trials": 20,
+      "timeout_wall": 30.0,
+      "timeout_target": 45.0,
+      "blocks": [1, 2, 3, 4]
+    }
+  },
+  
+  "ttl_markers": {
+    "1": "Trial开始",
+    "2": "到达墙面标记",
+    "3": "观察者按键",
+    "4": "找到隐藏目标",
+    "5": "Block结束"
+  },
+  
+  "audio_config": {
+    "wallmarker_go_dir": "Assets/Audios/WallMarker_go",
+    "wallmarker_arrive_dir": "Assets/Audios/WallMarker_arrive",
+    "target_go_dir": "Assets/Audios/Target_go",
+    "target_arrive_dir": "Assets/Audios/Target_arrive",
+    "common_dir": "Assets/Audios/Common",
+    "interval_after_target_found": 2.0,
+    "comment": "interval_after_target_found: 找到目标后等待秒数再继续"
+  },
+  
+  "natnet_config": {
+    "server_ip": "127.0.0.1",
+    "client_ip": "127.0.0.1",
+    "use_multicast": true,
+    "connection_timeout": 5.0,
+    "skeleton_names": ["Skeleton_1", "Skeleton_2"],
+    "rigid_body_names": ["RigidBody_1", "RigidBody_2"]
+  },
+  
+  "lsl_config": {
+    "marker_stream_name": "Navigation_Markers",
+    "marker_stream_type": "Markers",
+    "degraded_mode_timeout": 10.0,
+    "max_position_loss": 2.0
+  },
+  
+  "data_config": {
+    "behavior_dir": "Data/Behavior",
+    "optitrack_dir": "Data/OptiTrack",
+    "lsl_dir": "Data/LSL",
+    "logs_dir": "Logs",
+    "position_buffer_size": 100,
+    "auto_flush_interval": 10.0
+  },
+  
+  "visual_config": {
+    "participant_colors": {
+      "navigator": [1, -1, -1],
+      "observer": [-1, -1, 1],
+      "single": [1, 1, 1]
+    },
+    "wall_colors": {
+      "A": [-1, -1, 1],
+      "B": [-1, 1, -1],
+      "C": [1, -1, -1],
+      "D": [1, 1, -1]
+    },
+    "marker_radius": 12,
+    "participant_radius": 15,
+    "text_height": 20,
+    "border_color": [0.5, 0.5, 0.5],
+    "highlight_color": [1, 1, 0]
+  },
+  
+  "robustness_config": {
+    "max_position_loss_time": 2.0,
+    "skeleton_timeout": 3.0,
+    "retry_attempts": 3,
+    "graceful_degradation": true
+  },
+  
+  "development_config": {
+    "debug_mode": false,
+    "log_level": "INFO",
+    "show_performance_stats": false,
+    "bypass_hardware_check": false
+  }
+}

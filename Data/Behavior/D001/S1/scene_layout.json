@@ -1,0 +1,415 @@
+{
+  "room_size": [
+    6.0,
+    6.0
+  ],
+  "transform_params": {
+    "scale_factor": 180.0,
+    "z_flip": -1,
+    "world_range": 6.0,
+    "screen_range": 1080
+  },
+  "wall_markers": {
+    "A1": {
+      "id": "A1",
+      "wall": "A",
+      "position": "bottom",
+      "real_pos": [
+        -2.0,
+        -3.0
+      ],
+      "screen_pos": [
+        -360.0,
+        540.0
+      ],
+      "color": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    "A2": {
+      "id": "A2",
+      "wall": "A",
+      "position": "bottom",
+      "real_pos": [
+        -1.0,
+        -3.0
+      ],
+      "screen_pos": [
+        -180.0,
+        540.0
+      ],
+      "color": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    "A3": {
+      "id": "A3",
+      "wall": "A",
+      "position": "bottom",
+      "real_pos": [
+        0.0,
+        -3.0
+      ],
+      "screen_pos": [
+        0.0,
+        540.0
+      ],
+      "color": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    "A4": {
+      "id": "A4",
+      "wall": "A",
+      "position": "bottom",
+      "real_pos": [
+        1.0,
+        -3.0
+      ],
+      "screen_pos": [
+        180.0,
+        540.0
+      ],
+      "color": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    "A5": {
+      "id": "A5",
+      "wall": "A",
+      "position": "bottom",
+      "real_pos": [
+        2.0,
+        -3.0
+      ],
+      "screen_pos": [
+        360.0,
+        540.0
+      ],
+      "color": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    "B1": {
+      "id": "B1",
+      "wall": "B",
+      "position": "right",
+      "real_pos": [
+        3.0,
+        -2.0
+      ],
+      "screen_pos": [
+        540.0,
+        360.0
+      ],
+      "color": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    "B2": {
+      "id": "B2",
+      "wall": "B",
+      "position": "right",
+      "real_pos": [
+        3.0,
+        -1.0
+      ],
+      "screen_pos": [
+        540.0,
+        180.0
+      ],
+      "color": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    "B3": {
+      "id": "B3",
+      "wall": "B",
+      "position": "right",
+      "real_pos": [
+        3.0,
+        0.0
+      ],
+      "screen_pos": [
+        540.0,
+        -0.0
+      ],
+      "color": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    "B4": {
+      "id": "B4",
+      "wall": "B",
+      "position": "right",
+      "real_pos": [
+        3.0,
+        1.0
+      ],
+      "screen_pos": [
+        540.0,
+        -180.0
+      ],
+      "color": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    "B5": {
+      "id": "B5",
+      "wall": "B",
+      "position": "right",
+      "real_pos": [
+        3.0,
+        2.0
+      ],
+      "screen_pos": [
+        540.0,
+        -360.0
+      ],
+      "color": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    "C1": {
+      "id": "C1",
+      "wall": "C",
+      "position": "top",
+      "real_pos": [
+        2.0,
+        3.0
+      ],
+      "screen_pos": [
+        360.0,
+        -540.0
+      ],
+      "color": [
+        1,
+        -1,
+        -1
+      ]
+    },
+    "C2": {
+      "id": "C2",
+      "wall": "C",
+      "position": "top",
+      "real_pos": [
+        1.0,
+        3.0
+      ],
+      "screen_pos": [
+        180.0,
+        -540.0
+      ],
+      "color": [
+        1,
+        -1,
+        -1
+      ]
+    },
+    "C3": {
+      "id": "C3",
+      "wall": "C",
+      "position": "top",
+      "real_pos": [
+        0.0,
+        3.0
+      ],
+      "screen_pos": [
+        0.0,
+        -540.0
+      ],
+      "color": [
+        1,
+        -1,
+        -1
+      ]
+    },
+    "C4": {
+      "id": "C4",
+      "wall": "C",
+      "position": "top",
+      "real_pos": [
+        -1.0,
+        3.0
+      ],
+      "screen_pos": [
+        -180.0,
+        -540.0
+      ],
+      "color": [
+        1,
+        -1,
+        -1
+      ]
+    },
+    "C5": {
+      "id": "C5",
+      "wall": "C",
+      "position": "top",
+      "real_pos": [
+        -2.0,
+        3.0
+      ],
+      "screen_pos": [
+        -360.0,
+        -540.0
+      ],
+      "color": [
+        1,
+        -1,
+        -1
+      ]
+    },
+    "D1": {
+      "id": "D1",
+      "wall": "D",
+      "position": "left",
+      "real_pos": [
+        -3.0,
+        2.0
+      ],
+      "screen_pos": [
+        -540.0,
+        -360.0
+      ],
+      "color": [
+        1,
+        1,
+        -1
+      ]
+    },
+    "D2": {
+      "id": "D2",
+      "wall": "D",
+      "position": "left",
+      "real_pos": [
+        -3.0,
+        1.0
+      ],
+      "screen_pos": [
+        -540.0,
+        -180.0
+      ],
+      "color": [
+        1,
+        1,
+        -1
+      ]
+    },
+    "D3": {
+      "id": "D3",
+      "wall": "D",
+      "position": "left",
+      "real_pos": [
+        -3.0,
+        0.0
+      ],
+      "screen_pos": [
+        -540.0,
+        -0.0
+      ],
+      "color": [
+        1,
+        1,
+        -1
+      ]
+    },
+    "D4": {
+      "id": "D4",
+      "wall": "D",
+      "position": "left",
+      "real_pos": [
+        -3.0,
+        -1.0
+      ],
+      "screen_pos": [
+        -540.0,
+        180.0
+      ],
+      "color": [
+        1,
+        1,
+        -1
+      ]
+    },
+    "D5": {
+      "id": "D5",
+      "wall": "D",
+      "position": "left",
+      "real_pos": [
+        -3.0,
+        -2.0
+      ],
+      "screen_pos": [
+        -540.0,
+        360.0
+      ],
+      "color": [
+        1,
+        1,
+        -1
+      ]
+    }
+  },
+  "hidden_targets": {
+    "P1": {
+      "id": "P1",
+      "center": [
+        1.1723006641921012,
+        1.5891215582318226
+      ],
+      "radius": 0.4,
+      "screen_center": [
+        211.01411955457823,
+        -286.04188048172807
+      ],
+      "screen_radius": 72.0
+    },
+    "P2": {
+      "id": "P2",
+      "center": [
+        -0.57775117604251,
+        -0.7953694908530662
+      ],
+      "radius": 0.4,
+      "screen_center": [
+        -103.9952116876518,
+        143.1665083535519
+      ],
+      "screen_radius": 72.0
+    },
+    "P3": {
+      "id": "P3",
+      "center": [
+        -1.6985166337853643,
+        1.5986487486755472
+      ],
+      "radius": 0.4,
+      "screen_center": [
+        -305.7329940813656,
+        -287.7567747615985
+      ],
+      "screen_radius": 72.0
+    }
+  }
+}
