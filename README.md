@@ -10,7 +10,14 @@
 
 ## 🎯 系统简介
 
-本系统用于研究双人协作空间导航任务中的行为和神经同步现象，集成了OptiTrack动作捕捉和LSL数据流技术。
+- 本系统用于研究双人协作空间导航任务中的行为和神经同步现象，集成了OptiTrack动作捕捉和LSL数据流技术。
+  
+- 核心技术是通过NatNet SDK接收OptiTrack的实时位置数据，并将其转换为Lab Streaming Layer (LSL)格式进行广播和同步。
+  
+- 借助于PsychoPy实现实验界面的实时可视化和交互。通过该空间导航实验可以充分理解如何实现NatNet读取并写入Motive的流式数据，以及如何利用LSL进行多模态数据的同步和记录。
+
+
+
 ### 技术方法
 1.用NatNetSDK接收从Optitrack(Motive)流出的帧数据包
 
